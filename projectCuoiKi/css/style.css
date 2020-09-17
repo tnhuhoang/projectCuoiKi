@@ -1,0 +1,134 @@
+/* default */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.h-a{
+    color: black;
+    text-decoration: none;
+}
+
+.h-li{
+    list-style: none;
+    padding:0px;
+    margin:0;
+}
+.h-carousel-image{
+    margin: 10px auto;
+    z-index: 1;
+    width: 90%;
+    height: calc(100vh - 80px);
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px gray;
+}
+.h-nav-brand{
+    padding-left:5%;
+}
+.h-carousel-image:hover{
+    opacity: 0.9;
+    cursor:pointer;
+
+}
+
+.h-carousel-image:active{
+    opacity: 1;
+    cursor:pointer;
+    box-shadow: 0px 2px 10px black;
+
+}
+
+/* main */
+.h-main{
+    box-shadow: 0px -2px 20px rgb(219, 236, 240);
+}
+
+.h-con-main{
+    width:90%;
+    margin: 20px auto;
+}
+
+.h-main-card{
+    /* border:1px solid gray; */
+    
+}
+
+.h-main-title{
+    border-bottom: 1px solid black;
+    font-family: 'Kufam', cursive;
+}
+.h-nav-side{
+    padding: 5px 0 5px 10%;
+    border-bottom: 1px solid gray;
+}
+
+.h-nav-side a{
+    display: block;
+}
+
+.h-nav-side a:hover{
+    color: rgb(165, 92, 65);
+    text-decoration: none;
+}
+
+.h-right-sidebar-content{
+    border-bottom: 1px solid rgb(148, 124, 124);
+    padding-bottom: 10px;
+}
+
+.h-con-post{
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 25px rgb(207, 201, 201);
+}
+
+.h-main-post-img{
+    margin: 0 auto;
+    width: 90%;
+    height:80%;
+}
+
+.h-main-post-img img{
+    border-radius: 10px;
+}
+.h-post-content{
+    width: 90%;
+    margin: 5px auto;
+}
+
+.h-post-break{
+    height: 20px;
+}
+.h-right-sidebar-content-date{
+    margin-top: 5px;
+    color:gray;
+}
+
+.h-left-sidebar-bottom .h-main-title{
+    margin-top:20%;
+}
+
+.h-sidebar-post-content{
+    position: relative;
+}
+
+.h-sidebar-post .fa-greater-than{
+    font-size: 0.8em;
+    display: inline-block;
+}
+.h-sidebar-post .h-a:hover{
+    text-decoration: none;
+}
+.h-sidebar-post .fa-greater-than:hover{
+    
+    color:red;
+    
+    
+}
+
+/* footer */
+.h-footer{
+    border-top: 1px solid rgb(117, 107, 107);
+    background: rgb(155, 180, 180);
+}
