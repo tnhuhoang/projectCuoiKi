@@ -35,47 +35,88 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- facebook plugin -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0" nonce="ZZpvebDi"></script>
+    <!-- facebook plugin -->
     <div class="container-fluid">
         <div class="row">
-            <header>
-                
-                <nav class="navbar navbar-expand-sm navbar-light">
-                    <a class="navbar-brand h-nav-brand" href="#">
-                        <img src="images/logo.jpg" alt="logo" class="img-fluid">  
-                    </a>
-                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item active dropdown h-nav-item">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dao Tao</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Hello</a>
+            <div class="col-sm h-navbar" id="h-main-navbar">
+                <header>
+                    
+                    <nav class="navbar navbar-expand-sm navbar-light">
+                        <a class="navbar-brand h-nav-brand" href="#">
+                            <img src="images/logo.jpg" alt="logo" class="img-fluid">  
+                        </a>
+                        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item active dropdown h-nav-item">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dao Tao</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Dao tao dai hoc</a>
+                                        <a class="dropdown-item" href="#">Dao tao sau dai hoc</a>
+                                        <a class="dropdown-item" href="#">Chuan dau ra</a>
+                                        <a class="dropdown-item" href="#">Mo Hinh dao tao</a>
+                                        <a class="dropdown-item" href="#">De Cuong mon Hoc</a>
+                                    </div>
+                                    
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tuyen Sinh</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Sinh Vien</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Tai Lieu sinh vien</a>
+                                        <a class="dropdown-item" href="#">To tu van hoc tap</a>
+                                        <a class="dropdown-item" href="#">Bieu mau</a>
+                                        <a class="dropdown-item" href="#">Luan van tot nghiep</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Cuu Sinh Vien</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Nghien cuu Khoa Hoc</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Cac de tai du an</a>
+                                        <a class="dropdown-item" href="#">Thong tin seminar</a>
+                                        <a class="dropdown-item" href="#">Cong trinh cong bo</a>
+                                        <a class="dropdown-item" href="#">Cac phong thi nghiem</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                                <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search"> -->
+                                <a href="#" id="h-search-button"><i class="fas fa-search"></i></a>
+                            </form>
+                            <div class="h-search-slide">
+                                <div class="h-search-box">
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                                        <a href="#" id="h-search-button"><i class="fas fa-search"></i></a>
+                                    </form>
                                 </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Tuyen Sinh</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sinh Vien</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Cuu Sinh Vien</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Tin Tuc & Su Kien</a>
-                            </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search"> -->
-                            <a href="#"><i class="fas fa-search"></i></a>
-                        </form>
-                    </div>
-                </nav>
+                                <div class="h-search-result">
+                                </div>
+                                <div class="h-search-recent">
+                                    <p class="h-s-r-title">Gan day</p>
+                                    <p class="h-s-r-text">dao tao sinh vien</p>
+                                    <p class="h-s-r-text">tim viec</p>
+                                </div>
+                            </div>
 
-            </header>
+
+                        </div>
+                    </nav>
+
+                </header>
+            </div>
+            
         </div>
         <div class= "row">
             <!-- slide show -->
@@ -314,19 +355,142 @@ Năm 2019, kỳ thi Olympic Tin học sinh viên toàn quốc có sự tham dự
                             <p class="h-right-sidebar-content-date">16/7/2000</p>
                             <h4>CÔNG TY SMARTOSC TÌM KIẾM THỰC TẬP SINH TÀI NĂNG (PHP/ TESTER)</h4>
                         </div>
+                        <div class="h-right-sidebar-content">
+                            <p class="h-right-sidebar-content-date">16/7/2000</p>
+                            <h4>CÔNG TY SMARTOSC TÌM KIẾM THỰC TẬP SINH TÀI NĂNG (PHP/ TESTER)</h4>
+                        </div>
+                        <div class="h-right-sidebar-content">
+                            <p class="h-right-sidebar-content-date">16/7/2000</p>
+                            <h4>CÔNG TY SMARTOSC TÌM KIẾM THỰC TẬP SINH TÀI NĂNG (PHP/ TESTER)</h4>
+                        </div>
                     </div>
 
                 </div>
             </div>
             
+            <!-- image nav -->
+            <div class="row h-img-nav-con bg-light">
+                <div class="col-sm-6 h-img-nav-left">
+                    <div class="container-fluid h-i-n-l-con">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="h-img-nav-content">
+                                    <img src="images/i2.jpg" class="img-fluid">
+                                    <a href="#" class="h-a"><div class="h-img-nav-title">
+                                        Anh khoa CNTT
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-6 h-img-nav-right">
+                    <div class="container-fluid h-i-n-r-con">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="h-img-nav-content">
+                                    <img src="images/i2.jpg" class="img-fluid">
+                                    <a href="#" class="h-a"><div class="h-img-nav-title">
+                                        Loi chao mung
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="h-img-nav-content">
+                                    <img src="images/i2.jpg" class="img-fluid">
+                                    <a href="#" class="h-a"><div class="h-img-nav-title">
+                                        Giang vien
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="h-img-nav-content">
+                                    <img src="images/i2.jpg" class="img-fluid">
+                                    <a href="#" class="h-a"><div class="h-img-nav-title">
+                                        Nghien cuu khoa hoc
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="h-img-nav-content">
+                                    <img src="images/i2.jpg" class="img-fluid">
+                                    <a href="#" class="h-a"><div class="h-img-nav-title">
+                                        Dao tao
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- //image nav -->
 
         </div>
         <!-- //main post -->
+        
+        <!-- footer -->
         <div class="row h-footer" >
-            <div class="col-sm">
-                hello
+            <div class="col-sm-3">
+                <div class="h-footer-address">
+                    <h5>Khoa cong nghe thong tin</h5>
+                    <div class="h-f-a-detail">
+                        <h6>Dia chi</h6>
+                        <p>TẦNG 2 NHÀ C1, 175 TÂY SƠN, QUẬN ĐỐNG ĐA, THÀNH PHỐ HÀ NỘI</p>
+                    </div>
+                    <div class="h-f-a-detail">
+                        <h6>Dien thoai</h6>
+                        <p>(04) 35632211</p>
+                    </div>
+                    <div class="h-f-a-detail">
+                        <h6>Fax</h6>
+                        <p>(04) 3563 3351</p>
+                    </div>
+                    <div class="h-f-a-detail">
+                        <h6>Email</h6>
+                        <p>vpkcntt@tlu.edu.vn</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-sm-3">
+                <ul class="h-footer-nav">
+                    <li class="h-li"><a href="#" class="h-a">Mo hinh dao tao</a></li>
+                    <li class="h-li"><a href="#" class="h-a">Dao tao dai hoc</a></li>
+                    <li class="h-li"><a href="#" class="h-a">Dinh Huong nganh nghe</a></li>
+                    <li class="h-li"><a href="#" class="h-a">Dao tao sau dai hoc</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <ul class="h-footer-nav">
+                    <li class="h-li"><a href="#" class="h-a">Cong nghe phan mem</a></li>
+                    <li class="h-li"><a href="#" class="h-a">He thong thong tin</a></li>
+                    <li class="h-li"><a href="#" class="h-a">Khoa hoc may tinh</a></li>
+                    <li class="h-li"><a href="#" class="h-a">Ky thuat may tinh va mang</a></li>
+                    <li class="h-li"><a href="#" class="h-a">Toan hoc</a></li>
+                    <li class="h-li"><a href="#" class="h-a">Trung tam tin hoc</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 h-fb-plugin">
+                <!-- facebook fanpage -->
+                <div class="fb-page" data-href="https://www.facebook.com/cse.tlu.edu.vn/" data-tabs="event" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/cse.tlu.edu.vn/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cse.tlu.edu.vn/">Khoa Công nghệ thông tin- Đại học Thủy lợi</a></blockquote></div>
+                <!-- //facebook fanpage -->
             </div>
         </div>
+        <div class="row h-footer-copyright">
+            <div class="col-sm-9 h-f-c-title">
+                <h6>Copyright &copy 2020 CSE TLU. All rights reserved.</h6>
+            </div>
+            <div class="col-sm-3">
+                <div class="h-contact-icon"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                <div class="h-contact-icon"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                <div class="h-contact-icon"><a href="#"><i class="fa fa-twitter"></i></a></div>
+            </div>
+        </div>
+        <!-- //footer -->
     </div>
     
 
