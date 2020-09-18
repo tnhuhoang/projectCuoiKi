@@ -34,7 +34,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="initialElement()">
     <!-- facebook plugin -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0" nonce="ZZpvebDi"></script>
@@ -92,9 +92,13 @@
                             </ul>
                             <form class="form-inline my-2 my-lg-0">
                                 <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search"> -->
-                                <a href="#" id="h-search-button"><i class="fas fa-search"></i></a>
+                                <a href="#" id="h-search-button" onclick="toggleSearch()"><i class="fas fa-search"></i></a>
                             </form>
-                            <div class="h-search-slide">
+                            <!-- seach box -->
+                            <div class="h-search-slide" id="h-slide-search">
+                                <div class="h-search-exit">
+                                    <button class="h-exit-button" onclick="closeSearchBox()">&times</button>
+                                </div>
                                 <div class="h-search-box">
                                     <form class="form-inline my-2 my-lg-0">
                                         <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -102,15 +106,45 @@
                                     </form>
                                 </div>
                                 <div class="h-search-result">
+                                    <div class="h-s-r-found">
+                                        <p class="h-s-r-found-text">Ket Qua</p>
+                                        <div>
+                                            <a class="h-a" href="#">
+                                                <img src="images/i3.jpg" class="img-fluid h-search-img" alt="">
+                                                <h5>
+                                                Kết quả của đội tuyển Olympic Tin học sinh viên tại kỳ thi toàn quốc lần thứ 28
+                                                </h5>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a class="h-a" href="#">
+                                                <img src="images/i3.jpg" class="img-fluid h-search-img" alt="">
+                                                <h5>
+                                                Kết quả của đội tuyển Olympic Tin học sinh viên tại kỳ thi toàn quốc lần thứ 28
+                                                </h5>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a class="h-a" href="#">
+                                                <img src="images/i3.jpg" class="img-fluid h-search-img" alt="">
+                                                <h5>
+                                                Kết quả của đội tuyển Olympic Tin học sinh viên tại kỳ thi toàn quốc lần thứ 28
+                                                </h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="h-s-r-not-found">
+                                        <p class="h-s-text">K tim thay ket qua</p>
+                                    </div>
                                 </div>
                                 <div class="h-search-recent">
                                     <p class="h-s-r-title">Gan day</p>
-                                    <p class="h-s-r-text">dao tao sinh vien</p>
-                                    <p class="h-s-r-text">tim viec</p>
+                                    <p class="h-s-r-text"><a href="#" class="h-a">- dao tao sinh vien</a></p>
+                                    <p class="h-s-r-text"><a href="#" class="h-a">- tim viec</a></p>
                                 </div>
                             </div>
 
-
+                            <!-- //search box -->
                         </div>
                     </nav>
 

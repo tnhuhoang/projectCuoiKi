@@ -1,3 +1,10 @@
+function initialElement(){
+    var eSearchBox = document.getElementById("h-slide-search");
+    eSearchBox.style.display = "block";
+    var searchWidth = eSearchBox.offsetWidth;
+    eSearchBox.style.right = "-"+searchWidth+"px";
+}
+
 // scroll nav bar
 var prevScroll = window.scrollY;
 window.onscroll = function(){
@@ -22,3 +29,19 @@ window.onscroll = function(){
 }
 
 //// scroll navbar
+
+// toggle side slide search
+function toggleSearch(){
+    initialElement();
+    var eSearchBox = document.getElementById("h-slide-search");
+    var searchWidth = eSearchBox.offsetWidth;
+    eSearchBox.style.right = "0px";
+    eSearchBox.style.transition = "right 0.3s";
+}
+
+function closeSearchBox(){
+    var eSearchBox = document.getElementById("h-slide-search");
+    eSearchBox.style.right = "-999px";
+    eSearchBox.style.transition = "right 0.3s";
+}
+// // toggle side slide search

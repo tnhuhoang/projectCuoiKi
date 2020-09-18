@@ -244,3 +244,104 @@
 .h-img-nav-con .col-sm-6{
     padding: 10px;
 }
+
+/* search box */
+
+.h-search-slide{
+    position: fixed;
+    height: 100%;
+    width: 25%;
+    /* border: 1px solid black; */
+    right: 0;
+    top: 0;
+    background: rgb(15, 15, 15, 0.85);
+    overflow-y: scroll;
+    display: none;
+}
+
+.h-search-slide .h-search-box{
+    margin: 35px auto 10px auto;
+    position: relative;
+    padding-bottom: 30px;
+    border-bottom: 1px solid gray;
+}
+.h-search-slide .h-search-box .form-control{
+    margin: 0 50px 0 10px;
+    width: 80%;
+    
+}
+.h-search-slide .h-search-box #h-search-button{
+    position: absolute;
+    top: 5;
+    right: 9%;
+    color: gray;
+}
+
+.h-search-slide .h-search-box #h-search-button:hover{
+    box-shadow: 1px 1px 20px rgb(20, 66, 153);
+}
+.h-s-r-found-text{
+    padding-left: 25px;
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+.h-search-slide .h-s-text{
+    padding-left: 25px;
+    margin-top: 10px;
+    color: rgb(228, 0, 0);
+}
+
+.h-search-recent .h-s-r-title{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 5px 0 5px 25px;
+    color: white;
+
+}
+.h-search-img{
+    padding: 20px;
+
+}
+
+.h-s-r-found h5{
+    color: white;
+    padding-left: 20px;
+
+}
+
+.h-s-r-found a{
+    display: block;
+    padding: 5px 0 10px 0;
+}
+.h-s-r-found a:hover{
+    text-decoration: none;
+    background: green;
+}
+.h-search-recent .h-s-r-text .h-a{
+    padding-left: 35px;
+    color: gray;
+    font-style: italic;
+}
+
+.h-search-exit{
+    width: 100%;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.h-exit-button{
+    padding: 5px 10px 5px 10px;
+    background:rgb(15, 15, 15, 0.85);
+    border:none;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 10px;
+}
+
+.h-exit-button:active{
+    background:rgba(7, 63, 85, 0.65);
+
+}
